@@ -20,11 +20,17 @@
 
     <form method="POST" action="http://formspree.io/alikh_birjand@yahoo.com" align="right">
   یوزرنیمتون چی باشه؟
+      <br />
   <input type="text" name="usrname">
+      <br />
   و پسوردتون؟
+      <br />
   <input name="password" required="required" type="password" id="password" />
+      <br />
   لطفا پسورد رو تکرار کنید:
+      <br />
   <input name="password_confirm" required="required" type="password" id="password_confirm" oninput="check(this)" />
+      <br />
 <script language='javascript' type='text/javascript'>
     function check(input) {
         if (input.value != document.getElementById('password').value) {
@@ -36,11 +42,16 @@
     }
 </script>
   
-و ایمیلتون (برای دریافت کد فعالسازی)؟
-  <input type="email" required="required" name="email" >
-  و در آخر، زمینه‌های مورد علاقه‌ی شما؟
-    <input type="text" name="zamine">
 
+     و ایمیلتون (برای دریافت کد فعالسازی)؟
+      <br />
+  <input type="email" required="required" name="email" >
+      <br />
+  و در آخر، زمینه‌های مورد علاقه‌ی شما؟
+      <br />
+    <input type="text" name="zamine">
+      <br />
+<input type="hidden" name="_next" value="//site.io/thanks.html" />
   <button type="submit">Send</button>
 </form>
     
