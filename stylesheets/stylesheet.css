@@ -1,10 +1,86 @@
 * {
   box-sizing: border-box; }
 
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.eot);
+  src: url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.ttf) format('truetype');
+}
+
+
+
+
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+  height:100%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: right;
+    width: 16.666666%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 33.3333333%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 33.3333333%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 body {
+      direction: rtl;
+
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Droid Arabic Naskh',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #606c71; }
@@ -26,7 +102,7 @@ a {
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
   .btn + .btn {
-    margin-left: 1rem; }
+    margin-right: 1rem; }
 
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
@@ -51,7 +127,7 @@ a {
     font-size: 0.9rem; }
     .btn + .btn {
       margin-top: 1rem;
-      margin-left: 0; } }
+      margin-right: 0; } }
 
 .page-header {
   color: #fff;
@@ -117,7 +193,7 @@ a {
   margin-bottom: 1em; }
 .main-content code {
   padding: 2px 4px;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: 'Droid Arabic Naskh',Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9rem;
   color: #383e41;
   background-color: #f3f6fa;
@@ -126,7 +202,7 @@ a {
   padding: 0.8rem;
   margin-top: 0;
   margin-bottom: 1rem;
-  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font: 1rem 'Droid Arabic Naskh',Consolas, "Liberation Mono", Menlo, Courier, monospace;
   color: #567482;
   word-wrap: normal;
   background-color: #f3f6fa;
